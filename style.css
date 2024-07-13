@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.userRegister.container,
+.userLogin.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(register.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.userRegister form div,
+.userLogin form div {
+    margin: 1em 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1em;
+    background-color: lightgray;
+    padding: 1em;
+    margin: 0;
+    font-size: 1.2em;
+    /* height: 5vh; */
+}
+
+.menu a {
+    border: none;
+    color: black;
+    text-decoration: none;
+}
+
+.menu button {
+    border: none;
+    background: black;
+    color: white;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
+.quizApp {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    /* background: #3da2ff; */
+}
+
+button.startQuiz {
+    margin: 1.5em;
+    border: none;
+    background: cornsilk;
+    padding: 0.5em 1.5em;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.hide {
+    display: none;
+}
+
+.pointerNone {
+    pointer-events: none;
+}
+
+.wrong {
+    background-color: #ff000059 !important;
+}
+
+.correct {
+    background-color: #3eb15b78 !important;
+}
+
+.OptionLi {
+    padding: 0.3em;
+    font-size: 1.2em;
+    /* color: white; */
+    background-color: #54abff;
+    margin: 0.5em 0;
+    border: 1px solid black;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.OptionLi.wrong::after {
+    color: red;
+    text-align: right;
+    font-family: "Font Awesome 5 Free";
+    content: "\f057";
+}
+
+.OptionLi.correct::after {
+    color: green;
+    text-align: right;
+    font-family: "Font Awesome 5 Free";
+    content: "\f058";
+}
+
+.OptionLi a {
+    text-decoration: none;
+    color: white;
+}
+
+.quizDiv {
+    width: 70%;
+    background: white;
+    padding: 1em;
+    margin: 1em;
+    border: none;
+    border-radius: 10px;
+}
+
+.quizDiv h2 {
+    /* text-align: center; */
+    margin: 1em 0;
+}
+
+.OptionUl::after {
+    border: 1px solid black;
+    content: "";
+    width: 100%;
+    display: block;
+    margin-top: 2em;
+}
+
+/* .admin-menu {
+    margin: 3em 1em;
+    font-size: 1.5em;
+}
+
+.leftPanel {
+    background: #3272d3;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100vh;
+    color: white;
+}
+
+.rightPanel {
+    background: black;
+    width: 80%;
+    height: 100vh;
+    color: white;
+}
+
+.admin-menu p {
+    padding: 0.3em 0;
+}
+
+.admin-menu p i {
+    padding: 0 0.5em;
+}
+
+.admin-menu p a {
+    color: white;
+    text-decoration: none;
+}
+
+.admin-menu p a:hover {
+    cursor: pointer;
+} */
+
+.container.admin{
+    background-color: #3da2ff;
+    display: flex;
+}
+.leftPanel {
+    background: #3272d3;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100vh;
+    color: white;
+}
+
+.rightPanel {
+    background: black;
+    width: 80%;
+    height: 100vh;
+    color: white;
+}
+.admin-menu {
+    margin: 3em 1em;
+    font-size: 1.5em;
+}
+.admin-menu p {
+    padding: 0.3em 0;
+}
+
+.admin-menu p a i {
+    padding: 0 0.5em;
+}
+
+.admin-menu p a {
+    color: white;
+    text-decoration: none;
+}
+
+.admin-menu p a:hover {
+    cursor: pointer;
+}
+
+.quizQuestionsWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+button.nextBtn, button.finishBtn {
+    border: none;
+    font-size: 1.3em;
+    width: 10%;
+    background: lightgrey;
+    /* display: flex; */
+    justify-content: flex-end;
+    border-radius: 10px;
+    margin: 0.5em 0;
+    padding: 0.2em 0;
+}
+.numberOfQuestions {
+    font-size: 1.3em;
+    color: white;
+}
+
+.userRegister form, .userLogin form{
+    width: 30%;
+    background: white;
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+}
+
+
+#registerBtn, #loginBtn{
+    border: none;
+    background: lightblue;
+    font-size: 1.3em;
+    padding: 0.3em 1em;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+.userRegister a , .userLogin a{
+    border: 1px solid lightblue;
+    background: white;
+    font-size: 1.3em;
+    padding: 0.3em 1em;
+    border-radius: 1em;
+    text-decoration: none;
+    color: black;
+}
+
+.userRegister a:hover, .userLogin a:hover{
+    background: lightblue;
+}
